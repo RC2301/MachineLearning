@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style type="text/css">
+        /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */
+        
+        * {
+            /* Background colors */
+            background: -webkit-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -webkit-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: linear-gradient(90deg, #ffffff 10%, #bebebe 90%);
+        }
+        
+        #aa {
+            /* Background colors */
+            background: -webkit-linear-gradient(90deg, #000000 50%, #8cc8ac 90%);
+            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -webkit-linear-gradient(90deg, #000000 50%, #fccb6e 90%);
+            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: linear-gradient(90deg, #000000 10%, #ffffff 90%);
+            height: 525px;
+            padding: 15px;
+        }
+        
+        #bb {
+            /* Background colors */
+            background: -webkit-linear-gradient(90deg, #000000 50%, #8cc8ac 90%);
+            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -webkit-linear-gradient(90deg, #000000 50%, #fccb6e 90%);
+            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: linear-gradient(90deg, #ffffff 10%, #000000 90%);
+            height: 525px;
+            padding: 15px;
+        }
+        
+        #cc {
+            /* Background colors */
+            background: -webkit-linear-gradient(90deg, #000000 50%, #8cc8ac 90%);
+            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
+            background: -webkit-linear-gradient(90deg, #000000 50%, #fccb6e 90%);
+            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
+            background: linear-gradient(90deg, #ffffff 10%, #000000 90%);
+            height: 285px;
+            padding: 15px;
+            background-color: #fccb6e;
+            color: #e74d6b;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<div>
+    <!-- <h1>Calculadora con AJAX</h1>
+
+
+    <input type="number" id="a"></br>
+    </br>
+    <input type="number" id="b"></br>
+    </br> -->
+    <!-- <input type="text" id="c">regesa</br>
+    </br> -->
+
+    <!-- El boton de Submit -->
+    <!-- <button id="calc">Calculadora</button> -->
+
+    <!-- Los DIV para los resultados -->
+    <!-- <div id="results">
+        <div id="add"></div>
+        <div id="subtract"></div>
+        <div id="multiply"></div>
+        <div id="divide"></div>
+        <div id="csrv"></div>
+    </div> -->
+    <center>
+        <section id="about" class="about">
+            <div class="container ajustar" data-aos="fade-up">
+                <div class="section-title">
+                    <p>
+                        <h1>
+                            <b>Análisis de Sentimientos del idioma Kichwa</b></h1>
+                    </p>
+                    <div class="divider py-1 bg-dark"></div>
+                    <!--                     <hr class="mt-2 mb-3" /> -->
+                </div>
+                <form method="POST" id="todo-form">
+                    <p class="font-weight-light">
+                        <h2>Ingrese el texto a analizar:</h2>
+                    </p>
+                    <div class="form-group" id="cc">
+                        <textarea class="form-control" name="todo" id="todo" rows="10" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Enviar <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </center>
+    <div class="container">
+        <div class="row">
+
+            <!-- <center> -->
+            <div class="col-6" id="aa">
+                <center>
+                    <br>
+                    <h2>MATRIZ JACCARD</h2>
+                    {%for i in jac:%}
+                    <h4>{{i}}</h4>
+                    {%endfor%}<br>
+                    <h3>PORCENTAJES:</h3><br>
+                    <h4>La Positividad es: {{a}}%</h4>
+                    <h4>La Negatividad es: {{b}}%</h4>
+                    <h4>La Neutralidad es: {{c}}%</h4><br>
+                    <h4>El resultado de la Frase ingresada es: {{d}}</h4><br>
+                </center>
+            </div>
+            <div class="col-6" id="bb">
+                <center>
+                    <br>
+                    <h2>MATRIZ COSENO VECTORIAL</h2>
+                    {%for i in Puntuacioncoseno:%}
+                    <h4>{{i}}</h4>
+                    {%endfor%}<br>
+                    <h3>PORCENTAJES:</h3><br>
+                    <h4>La Positividad es: {{e}}%</h4>
+                    <h4>La Negatividad es: {{f}}%</h4>
+                    <h4>La Neutralidad es: {{g}}%</h4><br>
+                    <h4>El resultado de la Frase ingresada es: {{h}}</h4><br>
+                </center>
+            </div>
+            <!-- </center> -->
+        </div>
+    </div>
+    <!-- Cargamos la librería de jQuery -->
+    <script src="/static/jquery-3.4.1.min.js"></script>
+
+    <!-- Cargamos la libreria de Funciones  -->
+    <script src="/static/math.js"></script>
+    </body>
+
+</html>
