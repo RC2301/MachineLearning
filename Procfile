@@ -1,1 +1,2 @@
-web: gunicorn main:app
+web: gunicorn app:main
+web: gunicorn app:proce
