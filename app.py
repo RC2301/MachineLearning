@@ -246,7 +246,21 @@ def proce():
     rcaf=[Puntuacioncoseno[0][1]*100,Puntuacioncoseno[0][2]*100,Puntuacioncoseno[0][3]*100]
 
     etiqu=['positivo','negativo','neutro']
-
+    sp2=np.array(df['Spanish'])
+    sp22=sp2.tolist()
+    r2=len(cuento)
+    print("palabra","\t","traduccion")
+    po=0
+    asd=[]
+    asd1=[]
+    tee=""
+    while po<r2:
+        if(cuento[po]in kichwa):
+            mn=ki2.index(cuento[po])
+            print(cuento[po],"\t",sp22[mn])
+            asd.append(cuento[po])
+            asd1.append(sp22[mn])
+        po=po+1
     return render_template("index.html",jac=jac,
         a=jac[0][1]*100,
         b=jac[0][2]*100,
@@ -256,7 +270,18 @@ def proce():
         e=Puntuacioncoseno[0][1]*100,
         f=Puntuacioncoseno[0][2]*100,
         g=Puntuacioncoseno[0][3]*100,
-        h=c1)
+        h=c1,
+        asd=asd,
+        asd1=asd1,
+        tee=tee)
+
+# @app.route("/pro")
+# def mainn():
+#     # Carga template main.html
+#     return render_template('pro.html')
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

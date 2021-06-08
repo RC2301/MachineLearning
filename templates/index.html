@@ -1,25 +1,80 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>WebSlides: Making HTML presentations easy</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features." />
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet" />
+
+    <!-- CSS WebSlides -->
+
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/webslides.css" />
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css" />
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/" />
+    <!-- YOUR URL -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy" />
+    <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma." />
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50" />
+    <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" />
+    <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webslides" />
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez" />
+    <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy" />
+    <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use." />
+    <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg" />
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png" />
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png" />
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png" />
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png" />
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png" />
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png" />
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png" />
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
     <style type="text/css">
-        /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */
-        
-        * {
-            /* Background colors */
-            background: -webkit-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -webkit-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: linear-gradient(90deg, #ffffff 10%, #bebebe 90%);
-        }
-        
-        #aa {
+        #as {
             /* Background colors */
             background: -webkit-linear-gradient(90deg, #000000 50%, #8cc8ac 90%);
             background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
@@ -30,135 +85,158 @@
             background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
             background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
             background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: linear-gradient(90deg, #000000 10%, #ffffff 90%);
-            height: 525px;
-            padding: 15px;
+            background: linear-gradient(90deg, #cfcfcf 10%, #ffffff 90%);
         }
         
-        #bb {
-            /* Background colors */
-            background: -webkit-linear-gradient(90deg, #000000 50%, #8cc8ac 90%);
-            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -webkit-linear-gradient(90deg, #000000 50%, #fccb6e 90%);
-            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: linear-gradient(90deg, #ffffff 10%, #000000 90%);
-            height: 525px;
-            padding: 15px;
-        }
-        
-        #cc {
-            /* Background colors */
-            background: -webkit-linear-gradient(90deg, #000000 50%, #8cc8ac 90%);
-            background: -moz-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -ms-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -o-linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: linear-gradient(90deg, #e74d6b 50%, #8cc8ac 90%);
-            background: -webkit-linear-gradient(90deg, #000000 50%, #fccb6e 90%);
-            background: -moz-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -ms-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: -o-linear-gradient(90deg, #65997d 50%, #fccb6e 90%);
-            background: linear-gradient(90deg, #ffffff 10%, #000000 90%);
-            height: 285px;
-            padding: 15px;
-            background-color: #fccb6e;
-            color: #e74d6b;
-            text-align: center;
+        #ass {
+            background: linear-gradient(90deg, #cfcfcf 10%, #ffffff 90%);
+            height: 500px;
+            size: 5px;
         }
     </style>
+
+
 </head>
 
-<div>
-    <!-- <h1>Calculadora con AJAX</h1>
+<body>
+    <header role="banner">
+        <nav role="navigation">
 
+            <ul>
+                <li class="github">
+                    <a rel="external" href="https://github.com/RC2301/MachineLearning.git" title="Github">
+                        <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+                        <em>WebSlides</em>
+                    </a>
+                </li>
+                <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+            </ul>
+        </nav>
+    </header>
 
-    <input type="number" id="a"></br>
-    </br>
-    <input type="number" id="b"></br>
-    </br> -->
-    <!-- <input type="text" id="c">regesa</br>
-    </br> -->
+    <main role="main">
+        <article id="webslides" class="vertical">
+            <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
 
-    <!-- El boton de Submit -->
-    <!-- <button id="calc">Calculadora</button> -->
-
-    <!-- Los DIV para los resultados -->
-    <!-- <div id="results">
-        <div id="add"></div>
-        <div id="subtract"></div>
-        <div id="multiply"></div>
-        <div id="divide"></div>
-        <div id="csrv"></div>
-    </div> -->
-    <center>
-        <section id="about" class="about">
-            <div class="container ajustar" data-aos="fade-up">
-                <div class="section-title">
+            <section>
+                <span class="background" style="
+              background-image: url('https://digitaltransformationtrends.com/wp-content/uploads/2019/10/AI-and-Machine-Learning.png');
+            "></span>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap aligncenter" id="as">
+                    <h1><strong>ANÁLISIS DE SENTIMIENTOS IDIOMA KICHWA.</strong></h1>
+                    <p class="text-intro">
+                        Proyecto del Primer Parcial de Aprendizaje de Maquina.
+                    </p>
+                    <p class="text-intro">
+                        Docente: Ing. Diego Vallejo.
+                    </p>
                     <p>
-                        <h1>
-                            <b>Análisis de Sentimientos del idioma Kichwa</b></h1>
+                        <a href="https://github.com/RC2301/MachineLearning/archive/refs/heads/main.zip" class="button zoomIn" title="Download WebSlides for free">
+                            <svg class="fa-cloud-download">
+                  <use xlink:href="#fa-cloud-download"></use>
+                </svg> GitHub
+                        </a>
                     </p>
-                    <div class="divider py-1 bg-dark"></div>
-                    <!--                     <hr class="mt-2 mb-3" /> -->
                 </div>
-                <form method="POST" id="todo-form">
-                    <p class="font-weight-light">
-                        <h2>Ingrese el texto a analizar:</h2>
-                    </p>
-                    <div class="form-group" id="cc">
-                        <textarea class="form-control" name="todo" id="todo" rows="10" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Enviar <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </center>
-    <div class="container">
-        <div class="row">
+                <!-- .end .wrap -->
+            </section>
 
-            <!-- <center> -->
-            <div class="col-6" id="aa">
-                <center>
-                    <br>
-                    <h2>MATRIZ JACCARD</h2>
-                    {%for i in jac:%}
-                    <h4>{{i}}</h4>
-                    {%endfor%}<br>
-                    <h3>PORCENTAJES:</h3><br>
-                    <h4>La Positividad es: {{a}}%</h4>
-                    <h4>La Negatividad es: {{b}}%</h4>
-                    <h4>La Neutralidad es: {{c}}%</h4><br>
-                    <h4>El resultado de la Frase ingresada es: {{d}}</h4><br>
-                </center>
-            </div>
-            <div class="col-6" id="bb">
-                <center>
-                    <br>
-                    <h2>MATRIZ COSENO VECTORIAL</h2>
-                    {%for i in Puntuacioncoseno:%}
-                    <h4>{{i}}</h4>
-                    {%endfor%}<br>
-                    <h3>PORCENTAJES:</h3><br>
-                    <h4>La Positividad es: {{e}}%</h4>
-                    <h4>La Negatividad es: {{f}}%</h4>
-                    <h4>La Neutralidad es: {{g}}%</h4><br>
-                    <h4>El resultado de la Frase ingresada es: {{h}}</h4><br>
-                </center>
-            </div>
-            <!-- </center> -->
-        </div>
-    </div>
-    <!-- Cargamos la librería de jQuery -->
-    <script src="/static/jquery-3.4.1.min.js"></script>
+            <section class="slide-bottom">
+                <div class="container ajustar" data-aos="fade-up">
+                    <div class="section-title">
+                        <center>
+                            <p>
+                                <h1>
+                                    <b>Análisis de Sentimientos del idioma Kichwa</b></h1>
+                            </p>
+                        </center>
+                        <div class="divider py-1 bg-dark"></div>
+                        <!--                     <hr class="mt-2 mb-3" /> -->
+                    </div>
+                    <form method="POST" id="todo-form">
+                        <p class="font-weight-light">
+                            <h2></h2>
+                        </p>
+                        <div class="form-group" id="cc">
+                            <textarea class="form-control" name="todo" id="todo" rows="6" placeholder="Ingrese el texto a analizar:" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Enviar <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
 
-    <!-- Cargamos la libreria de Funciones  -->
-    <script src="/static/math.js"></script>
-    </body>
+                        <!-- <center> -->
+                        <div class="col-6" id="aa">
+                            <center>
+                                <br>
+                                <h2>JACCARD</h2>
+                                <h3>PORCENTAJES:</h3><br>
+                                <h4>La Positividad es: {{a}}%</h4>
+                                <h4>La Negatividad es: {{b}}%</h4>
+                                <h4>La Neutralidad es: {{c}}%</h4><br>
+                                <h4>El resultado de la Frase ingresada es: {{d}}</h4><br>
+                            </center>
+                        </div>
+            </section>
+            <section>
+                <div class="col-6" id="bb">
+                    <center>
+                        <br>
+                        <h2>COSENO VECTORIAL</h2>
+                        <h3>PORCENTAJES:</h3><br>
+                        <h4>La Positividad es: {{e}}%</h4>
+                        <h4>La Negatividad es: {{f}}%</h4>
+                        <h4>La Neutralidad es: {{g}}%</h4><br>
+                        <h4>El resultado de la Frase ingresada es: {{h}}</h4><br>
+                    </center>
+                </div>
+                <!-- </center> -->
+                </div>
+                </div>
+            </section>
+            <!-- <section>
+
+                <div id="ass">
+                    <center>
+                        <h2>Traduccion</h2>
+                    </center>
+                    {%for k in tee:%}
+                    <h5>{{k}}</h5>
+                    {%endfor%}</div>
+            </section> -->
+        </article>
+        <!-- end article -->
+    </main>
+    <!-- end main -->
+
+    <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+</body>
 
 </html>
