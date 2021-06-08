@@ -247,7 +247,7 @@ def proce():
 
     etiqu=['positivo','negativo','neutro']
 
-    return render_template("main.html",jac=jac,
+    return render_template("index.html",jac=jac,
         a=jac[0][1]*100,
         b=jac[0][2]*100,
         c=jac[0][3]*100,
